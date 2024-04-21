@@ -1,0 +1,130 @@
+body{
+
+  background-image: url("landscape-1844226_1280.png");
+
+
+}
+
+header {
+  display: flex;
+  align-items: center;
+  
+  /* Remove the next line if you want the span to appear next to the h1 */
+  justify-content: space-between;
+  
+
+}
+
+.row1 {
+   display: flex;
+    flex-wrap: nowrap;
+   
+    justify-content: center ;
+
+}
+
+.row2{
+    display: flex; /* Nested flex container for elements below the canvases */
+    margin-top: 10px; /* Add spacing between canvases and bottom container */
+}
+
+
+
+
+
+
+
+#canvas{
+
+    margin: 10px;
+    position: relative; /* Ensure canvas elements can be reference points for absolutely positioned elements */
+    width: 50%; /* Adjust the width as needed */
+    max-width: 400px; /* Optionally, set a maximum width */
+    height: auto; /* Maintain aspect ratio */
+}
+
+#minimap{
+ 
+    margin: 10px;
+    position: relative; /* Ensure canvas elements can be reference points for absolutely positioned elements */
+    width: 50%; /* Adjust the width as needed */
+    max-width: 400px; /* Optionally, set a maximum width */
+    height: auto; /* Maintain aspect ratio */
+   
+
+}
+
+
+
+
+
+#boxmodel {
+
+    margin: 10px;
+    position: relative;
+     background-color: lightgrey;
+    border: 15px solid mediumpurple;
+    width: 50%; /* Adjust the width as needed */
+    max-width: 400px; /* Optionally, set a maximum width */
+    height: auto; /* Maintain aspect ratio */
+}
+
+
+
+
+#HUD{
+
+ border: 2px solid black;
+  outline: #9771F5 solid 5px;
+  margin: 20px;  
+  padding: 5px;
+  text-align: auto;
+font-family: "Trirong", serif;
+color: red;
+font-weight: bold;
+
+}
+
+#pos{
+
+  color: palevioletred;
+ font-weight: bold;
+}
+
+#posx{
+  color: yellow;
+}
+
+#posy{
+  color: yellow;
+}
+
+#percent{
+  color: yellow;
+}
+
+/* Styles for screens smaller than 600px (phones) */
+@media only screen and (max-width: 600px) {
+    /* Add your styles for phones here */
+    body {
+        font-size: 14px;
+    }
+}
+
+/* Styles for screens between 600px and 1024px (tablets) */
+@media only screen and (min-width: 600px) and (max-width: 1024px) {
+    /* Add your styles for tablets here */
+    body {
+        font-size: 16px;
+    }
+}
+
+/* Styles for screens larger than 1024px (desktops) */
+@media only screen and (min-width: 1025px) {
+    /* Add your styles for desktops here */
+    body {
+        font-size: 18px;
+    }
+}
+
+

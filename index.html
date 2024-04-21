@@ -1,0 +1,49 @@
+<html>
+  <head>
+    <title>FPS</title>
+    <link rel="stylesheet" type="text/css" href="game.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Trirong">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+</head>
+  <body>
+
+    <div id="HUD"> 
+  <header>
+  <h1>Patricia's Maze Deluxe</h1>
+  <span id="pos"></span>
+  <span id="posx"></span>
+  <span id="posy"></span>
+   <span id="percent"> </span>
+</header>
+    </div>
+  
+<div class="row1">
+
+        <canvas id="canvas"></canvas>
+   
+    <canvas id="minimap"></canvas>
+
+    <div id="boxmodel">
+      <h1>AMAZING MAZE</h1>
+      <p>Use arrow keys(up, down) to move player forward or backward, or(left, right) to rotate clockwise or counter-clockwise. </p>
+       <div id="screenshot-wrapper"><canvas id="screenshot"></canvas></div>
+    </div>
+    
+</div>
+
+    
+    
+
+    
+
+    <script type="text/javascript" src="jquery.js"></script>
+    <script type="text/javascript" src="filtrr2.js"></script>
+    <script type="text/javascript" src="jaws.js"></script>
+    <script type="text/javascript" src="game.js"></script>
+    <script>
+      jaws.assets.add(["dino.png"])
+      jaws.start(Game);
+    </script>
+  </body>
+</html>
